@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* header related styles */
+header {
+  /* background-color: aqua; */
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  padding: 80px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-title {
+  color: #3a3a3a;
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav li {
+  margin-right: 2rem;
+  color: #3a3a3a;
+  font-weight: 600;
+  list-style: none;
+}
+nav li a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+/* banner related styles */
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+.banner .banner-title {
+  color: #3a3a3a;
+
+  font-size: 3.26rem;
+
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.banner .banner-description {
+  max-width: 500px;
+  color: #3a3a3a;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.banner .banner-button {
+  padding: 10px 24px;
+  border-radius: 41px;
+  background: #e02c6d;
+  display: flex;
+  padding: 10px 24px;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  color: white;
+  font-weight: 700;
+}
