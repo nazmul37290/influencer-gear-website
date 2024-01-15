@@ -64,7 +64,7 @@ nav li a {
   margin-bottom: 1rem;
 }
 
-.banner .banner-button {
+.banner-button {
   padding: 10px 24px;
   border-radius: 41px;
   background: #e02c6d;
@@ -108,11 +108,11 @@ main {
 }
 .collection-card-container {
   display: grid;
-  gap: 30px;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
 .collection-card {
-  width: 330px;
+  width: 300px;
   padding: 15px;
   margin: 0 auto;
   border-radius: 5px;
@@ -176,6 +176,33 @@ main {
   font-weight: 700;
 }
 
+/* featured section styles */
+.featured {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 120px;
+}
+.featured-title {
+  color: #0a0826;
+
+  font-size: 38px;
+
+  font-weight: 700;
+  line-height: 60px; /* 157.895% */
+}
+.featured-description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #6c6c6c;
+  width: 500px;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+}
+.featured .banner-button {
+  border-radius: 5px;
+}
+
 /* Responsive related styles */
 
 @media screen and (max-width: 576px) {
@@ -194,7 +221,8 @@ main {
   .nav-title {
     margin-bottom: 20px;
   }
-  .banner {
+  .banner,
+  .featured {
     flex-direction: column-reverse;
   }
   .banner .banner-img-container img {
@@ -204,15 +232,17 @@ main {
   .banner-content {
     text-align: center;
   }
-  .banner-title {
+  .banner-title,
+  .featured-title {
     font-size: 1.75rem !important;
 
     line-height: normal !important;
     margin-top: 30px;
   }
-  .banner-button,
+  .banner .banner-button,
   .brands,
-  .collection-section {
+  .collection-section,
+  .featured {
     margin: 50px auto;
   }
   .brands-img-container {
@@ -228,6 +258,20 @@ main {
   .collection-section-title {
     font-size: 16px;
   }
+  .featured {
+    padding: 0 20px;
+    text-align: center;
+    gap: 30px;
+  }
+  .featured-img-container img {
+    width: 100%;
+  }
+  .featured .banner-button {
+    margin: 20px auto;
+  }
+  .featured-description {
+    width: auto;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   nav {
@@ -235,7 +279,7 @@ main {
     gap: 20px;
   }
   .banner .banner-img-container img {
-    width: 100%;
+    width: 90%;
     padding: 20px;
   }
   .banner-content {
@@ -247,7 +291,7 @@ main {
   }
   .brands-img-container {
     flex-wrap: wrap;
-    /* justify-content: space-; */
+
     column-gap: 40px;
     row-gap: 24px;
   }
@@ -257,5 +301,21 @@ main {
   }
   .collection-card {
     width: 250px;
+  }
+  .featured {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .featured-content {
+    text-align: center;
+    padding: 20px;
+  }
+  .featured .banner-button,
+  .featured-description {
+    margin: 20px auto;
+  }
+
+  .featured-img-container img {
+    width: 100%;
   }
 }
